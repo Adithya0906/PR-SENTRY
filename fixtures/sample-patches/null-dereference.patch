@@ -1,0 +1,8 @@
+--- a/src/Services/CustomerService.cs
++++ b/src/Services/CustomerService.cs
+@@ -10,4 +10,7 @@ public class CustomerService
+     public string GetCustomerName(Customer customer)
+     {
++        return customer.Name;
+     }
+ }

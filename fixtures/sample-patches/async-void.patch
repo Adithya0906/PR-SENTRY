@@ -1,0 +1,9 @@
+--- a/src/Services/OrderProcessor.cs
++++ b/src/Services/OrderProcessor.cs
+@@ -15,4 +15,7 @@ public class OrderProcessor
+-    public async Task SaveOrder()
++    public async void SaveOrder()
+     {
+         await repository.SaveAsync();
+     }
+ }

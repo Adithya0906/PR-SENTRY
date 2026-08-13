@@ -1,0 +1,14 @@
+name: 'PR Sentry – Sentry on the Diff'
+description: 'Automated GitHub Action for C# Pull Request code reviews, detecting SOLID, null-handling, and async issues on changed lines.'
+author: 'Antigravity'
+inputs:
+  github-token:
+    description: 'GitHub Token for GitHub API access (defaults to github.token)'
+    required: true
+    default: '${{ github.token }}'
+runs:
+  using: 'node20'
+  main: 'src/index.js'
+branding:
+  icon: 'eye'
+  color: 'purple'

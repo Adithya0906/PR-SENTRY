@@ -1,0 +1,8 @@
+--- a/src/Services/SaveHandler.cs
++++ b/src/Services/SaveHandler.cs
+@@ -12,4 +12,7 @@ public class SaveHandler
+     public void Execute()
+     {
++        SaveAsync().Wait();
+     }
+ }

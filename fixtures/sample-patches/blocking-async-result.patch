@@ -1,0 +1,9 @@
+--- a/src/Services/CustomerController.cs
++++ b/src/Services/CustomerController.cs
+@@ -20,4 +20,7 @@ public class CustomerController
+     public Customer Get()
+     {
++        var result = GetCustomerAsync().Result;
++        return result;
+     }
+ }

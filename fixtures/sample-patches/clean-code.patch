@@ -1,0 +1,17 @@
+--- a/src/Services/CleanService.cs
++++ b/src/Services/CleanService.cs
+@@ -1,5 +1,12 @@
+ public class CleanService
+ {
++    private readonly IEmailSender _sender;
+
++    public CleanService(IEmailSender sender)
++    {
++        _sender = sender ?? throw new ArgumentNullException(nameof(sender));
++    }
+
++    public async Task ProcessAsync(CancellationToken cancellationToken)
++    {
++        await _sender.SendAsync(cancellationToken);
++    }
+ }

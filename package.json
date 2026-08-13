@@ -1,0 +1,24 @@
+{
+  "name": "pr-sentry",
+  "version": "1.0.0",
+  "description": "GitHub Action that automatically reviews C# pull requests and posts inline review comments on changed lines for SOLID, null-handling, and async issues.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node tests/runTests.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "github-action",
+    "csharp",
+    "code-review",
+    "solid",
+    "async",
+    "null-safety"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  }
+}

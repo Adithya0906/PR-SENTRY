@@ -1,0 +1,11 @@
+--- a/src/Services/OrderService.cs
++++ b/src/Services/OrderService.cs
+@@ -5,4 +5,10 @@ public class OrderService
+ {
++    private readonly EmailSender sender = new EmailSender();
++
++    public void Process()
++    {
++        // order logic
++    }
+ }
